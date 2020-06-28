@@ -55,7 +55,13 @@ function getTriangle(a, b, c) {
 			return triangle;
 		}
 	} catch(e) {
-		const triangle = new FakeTriangle;
+		const triangle = {};
+		triangle.getArea = function() {
+			return 'Ошибка! Треугольник не существует';
+		}
+		triangle.getPerimeter = function() {
+			return 'Ошибка! Треугольник не существует';
+		}
 		return triangle;
 	}
 }

@@ -35,17 +35,6 @@ class Triangle {
 	}
 }
 
-class FakeTriangle {
-
-	getPerimeter() {
-		return 'Ошибка! Треугольник не существует';
-	}
-
-	getArea() {
-		return 'Ошибка! Треугольник не существует';
-	}
-}
-
 function getTriangle(a, b, c) {
 	try {
 		if (a + b <= c || b + c <= a || a + c <= b) {
